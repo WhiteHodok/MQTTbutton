@@ -33,7 +33,7 @@
 2. Клонируйте репозиторий:
    ```bash
    git clone https://github.com/WhiteHodok/MQTTbutton.git
-``
+
 
 3. Настройте параметры в коде:
 ```cpp
