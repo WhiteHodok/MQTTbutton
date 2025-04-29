@@ -33,3 +33,16 @@
 2. Клонируйте репозиторий:
    ```bash
    git clone https://github.com/WhiteHodok/MQTTbutton.git
+``
+
+3. Настройте параметры в коде:
+```cpp
+// Network settings
+const char* ssid = "YOUR_WIFI_SSID";
+const char* password = "YOUR_WIFI_PASSWORD";
+const char* mqtt_server = "MQTT_BROKER_IP";
+const char* mqtt_user = "MQTT_USERNAME";
+const char* mqtt_pass = "MQTT_PASSWORD";
+```
+
+4. Прошейте вашу ESP32 любым способом
