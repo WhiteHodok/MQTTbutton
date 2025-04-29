@@ -5,7 +5,7 @@ from aiogram.types import Message
 from config import bot
 from src.func import get_mqtt_listener  # Вместо прямого импорта используем функцию
 from src.keyboards.user_keyboard import user_keyboard, cancel_board, user_keyboard_button, user_cancel_button
-from src.phrases import START, LISTENING
+from src.phrases import START, LISTENING, ABOUT
 from src.states.user_states import User
 import logging
 
@@ -23,6 +23,10 @@ async def start_command(message: Message, state: FSMContext):
     except Exception as e:
         logger.error(f"Start command error: {e}")
 
+@user_router.message(F.text == user_keyboard_button['button2'], StateFilter(User.main))
+async def about(message: Message, state: FSMContext):
+    chat_id = message.chat.id
+    await bot.send_message(chat_id, ABOUT)
 
 @user_router.message(F.text == user_keyboard_button['button1'], StateFilter(User.main))
 async def start_listening(message: Message, state: FSMContext):
