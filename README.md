@@ -54,3 +54,16 @@ const char* mqtt_pass = "MQTT_PASSWORD";
 cd root/bot
 
 pip install -r requirements.txt
+```
+
+2. Создайте переменную среды в корне где лежит main.py
+```bash
+touch .env
+```
+
+3. Передайте ей атрибуты из config.py
+
+4. Запустите вашего бота
+```python
+python3 main.py
+```
