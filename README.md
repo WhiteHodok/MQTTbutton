@@ -45,4 +45,12 @@ const char* mqtt_user = "MQTT_USERNAME";
 const char* mqtt_pass = "MQTT_PASSWORD";
 ```
 
-4. Прошейте вашу ESP32 любым способом
+4. Прошейте вашу ESP32 любым способом.
+
+## Для телеграм бота
+
+1. Установите зависимости
+```bash
+cd root/bot
+
+pip install -r requirements.txt
