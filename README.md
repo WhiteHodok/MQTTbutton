@@ -67,3 +67,13 @@ touch .env
 ```python
 python3 main.py
 ```
+
+#Wiring 
+
+ESP32-S3           Компоненты
+════════════════════════════════
+GPIO35  ────┤ Кнопка (земля через подтягивающий резистор)
+GPIO36  ────┤ SCL (OLED)
+GPIO37  ────┤ SDA (OLED)
+3.3V    ────┤ VCC (OLED)
+GND     ────┤ GND (OLED/Кнопка)
