@@ -98,3 +98,16 @@ python3 main.py
   "count": 5
 }
 ```
+
+
+## Стек библиотек
+
+ESP32:
+- PubSubClient
+- Adafruit_SSD1306
+
+Python:
+- aiogram 3.20
+- aiomqtt 2.3.2
+- pydantic 2.11.3
+```
