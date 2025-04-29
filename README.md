@@ -68,7 +68,7 @@ touch .env
 python3 main.py
 ```
 
-#Wiring 
+# Wiring 
 
 ESP32-S3           Компоненты
 ════════════════════════════════
